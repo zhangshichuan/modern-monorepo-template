@@ -1,0 +1,47 @@
+{
+	"name": "modern-monorepo-template",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"preinstall": "npx -y only-allow pnpm",
+		"prepare": "husky"
+	},
+	"lint-staged": {
+		"*.{ts,tsx,js,jsx}": [
+			"eslint --config .eslintrc.cjs"
+		],
+		"*.{ts,tsx,js,jsx,json,html,yml,css,md}": [
+			"prettier --write"
+		]
+	},
+	"keywords": [],
+	"author": "zhangshichuan",
+	"license": "ISC",
+	"devDependencies": {
+		"@commitlint/cli": "^19.6.1",
+		"@commitlint/config-conventional": "^19.6.0",
+		"eslint": "^9.17.0",
+		"husky": "^9.1.7",
+		"lint-staged": "^15.2.11",
+		"prettier": "^3.4.2",
+		"vite": "^6.0.5"
+	},
+	"dependencies": {
+		"antd": "^5.22.5",
+		"axios": "^1.7.9",
+		"blueimp-md5": "^2.19.0",
+		"classnames": "^2.5.1",
+		"dayjs": "^1.11.13",
+		"framer-motion": "^11.15.0",
+		"immer": "^10.1.1",
+		"lodash": "^4.17.21",
+		"pm2": "^5.4.3",
+		"react": "^19.0.0",
+		"react-dom": "^19.0.0",
+		"react-router-dom": "^7.1.0",
+		"typescript": "^5.7.2",
+		"uuid": "^11.0.3"
+	}
+}
