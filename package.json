@@ -8,14 +8,11 @@
 		"preinstall": "npx -y only-allow pnpm",
 		"prepare": "husky",
 		"dev": "pnpm -F './apps/**' run dev",
-		"build:dev": "pnpm -r run build:dev",
-		"build:stg": "pnpm -r run build:stg",
-		"build:prod": "pnpm -r run build:prod",
-		"lint": "eslint --config eslint.config.mjs && prettier --write ./"
+		"lint": "tsc && eslint && prettier --write ./"
 	},
 	"lint-staged": {
 		"*.{ts,tsx,js,jsx}": [
-			"eslint --config eslint.config.mjs"
+			"eslint"
 		],
 		"*.{ts,tsx,js,mjs,cjs,jsx,json,html,yml,css,md}": [
 			"prettier --write"

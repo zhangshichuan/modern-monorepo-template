@@ -3,6 +3,7 @@ build
 dist
 .idea/*
 .DS_Store
+.env.local
 
 # React Router
 /.react-router/
