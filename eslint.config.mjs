@@ -19,4 +19,7 @@ export default [
 			'no-empty-pattern': 'off',
 		},
 	},
+	{
+		ignores: ['**/dist/', '**/build/', '**/node_modules/'],
+	},
 ]

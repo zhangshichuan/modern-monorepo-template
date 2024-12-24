@@ -6,7 +6,12 @@
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"preinstall": "npx -y only-allow pnpm",
-		"prepare": "husky"
+		"prepare": "husky",
+		"dev": "pnpm -F './apps/**' run dev",
+		"build:dev": "pnpm -r run build:dev",
+		"build:stg": "pnpm -r run build:stg",
+		"build:prod": "pnpm -r run build:prod",
+		"lint": "eslint --config eslint.config.mjs && prettier --write ./"
 	},
 	"lint-staged": {
 		"*.{ts,tsx,js,jsx}": [
