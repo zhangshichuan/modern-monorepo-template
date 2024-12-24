@@ -2,3 +2,7 @@ node_modules
 build
 dist
 .idea/*
+.DS_Store
+
+# React Router
+/.react-router/
