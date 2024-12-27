@@ -17,6 +17,7 @@ export default [
 			'react/react-in-jsx-scope': 'off',
 			'@typescript-eslint/no-namespace': 'off',
 			'no-empty-pattern': 'off',
+			'@typescript-eslint/no-empty-object-type': 'off',
 		},
 	},
 	{
