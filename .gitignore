@@ -5,5 +5,5 @@ dist
 .DS_Store
 *.local
 
-# React Router
 .react-router
+tsconfig.tsbuildinfo
