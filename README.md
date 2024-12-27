@@ -1,1 +1,1 @@
-# ModernMonorepoTemplate
+# TypeScriptMonorepoTemplate
